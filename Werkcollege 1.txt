@@ -1,2 +1,17 @@
-Test123
-2e regel
+Suppose we have the following scheme for our library database (assuming some simplifications).
+Old loan data are preserved. For every book, we only have one occurrence.
+BOOK (bno, title, author, publisher)
+READER (rno, name, address, city)
+LOAN (bno, rno, loan-date, return-date)
+Identify candidate keys for each table.
+Note that in the case of the Loan table, several solutions are possible, depending on your
+considerations with respect to the exact meaning of the table contents and the allowed
+operations.
+Identify also the foreign keys.
+
+Candidate Key: A candidate key is a key which has a 1 and only 1 principle. 
+Example: A book only has 1 book number. A book number applies to only 1 book.
+
+The candidate keys here are:
+Book (bno)*or anything linked with bno*, Book (title, author),
+Reader (rno)*or anything linked with rno*,
