@@ -1,3 +1,5 @@
+Exercise 1
+
 Suppose we have the following scheme for our library database (assuming some simplifications).
 Old loan data are preserved. For every book, we only have one occurrence.
 BOOK (bno, title, author, publisher)
@@ -21,4 +23,9 @@ Loan (bno) YES, because a book (with a unique book number) can only be borrowed 
 The foreign keys here are:
 Loan (bno), because this directly refers to one and only one book.
 Loan (rno), because this directly refers to one and only one reader.
+
+Exercise 2
+
+The original scheme of our library database does not support the possibility to have several occurrences of the same book. 
+Extend the scheme to do so, using SQL/DDL.
  
