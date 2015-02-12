@@ -13,5 +13,12 @@ Candidate Key: A candidate key is a key which has a 1 and only 1 principle.
 Example: A book only has 1 book number. A book number applies to only 1 book.
 
 The candidate keys here are:
-Book (bno)*or anything linked with bno*, Book (title, author),
-Reader (rno)*or anything linked with rno*,
+Book (bno) YES, because a book only has 1 book number. *or anything linked with bno*
+Book (title, author)YES, because an author will only have one book with 1 certain title. No two books with the same title.
+Reader (rno) YES, because a reader only has one reader number. *or anything linked with rno*
+Loan (bno) YES, because a book (with a unique book number) can only be borrowed once.
+
+The foreign keys here are:
+Loan (bno), because this directly refers to one and only one book.
+Loan (rno), because this directly refers to one and only one reader.
+ 
